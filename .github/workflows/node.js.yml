@@ -20,8 +20,10 @@ jobs:
       with:
         node-version: 14
 
-    - name: Run test
+    - name: Install packages
       run: npm ci
+
+    - name: Run test
       run: npm test
 
     - name: Set up Docker Buildx
